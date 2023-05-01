@@ -97,11 +97,11 @@ services:
     ## Storage Folders: "~" is a shortcut for your home directory, "." for the current directory
     volumes:
       # "/host/folder:/photoprism/folder"                # Example
-      #- "D:\\Dropbox\\Camera_Uploads:/photoprism/originals/camera"   # *Additional* media folders
+      #- "D:\\:/photoprism/originals/camera"   # *Additional* media folders
       - "K:\\xxxx:/photoprism/originals"               # Original media files (DO NOT REMOVE)
-      #- "D:\\Jiahua\\dell_old_pc\\mac:/photoprism/originals/Jiahua"   # *Additional* media folders can be mounted like this
-      # - "D:\\xxx:/photoprism/originals/xxx"   # *Additional* media folders      
-      #- "E:\\docker\\nextcloud_bensi\\data\\data\\bensi\\files\\Photos:/photoprism/import"                    # *Optional* base folder from which files can be imported to originals
+      #- "D:\\:/photoprism/originals/Jiahua"   # *Additional* media folders can be mounted like this
+      #- "D:\\xxx:/photoprism/originals/xxx"   # *Additional* media folders      
+      #- "E:\\Photos:/photoprism/import"                    # *Optional* base folder from which files can be imported to originals
       - ./storage:/photoprism/storage                # *Writable* storage folder for cache, database, and sidecar files (DO NOT REMOVE)
 
   ## Database Server (recommended)
